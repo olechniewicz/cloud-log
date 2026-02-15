@@ -1,14 +1,9 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>{{ page.title }}</title>
-</head>
-<body>
+---
+layout: none
+---
 
-<a href="/">← blog</a>
+# Blog
 
-{{ content }}
-
-</body>
-</html>
+{% for post in site.posts %}
+- [{{ post.title }}]({{ post.url }})
+{% endfor %}
