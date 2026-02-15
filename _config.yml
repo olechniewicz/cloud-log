@@ -1,3 +1,4 @@
 title: Blog
 theme: null
-future: true
+baseurl: /cloud-log
+permalink: /:title/
