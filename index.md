@@ -1,10 +1,14 @@
----
-layout: none
----
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+</head>
+<body>
 
-# Blog
+<a href="/">← blog</a>
 
-{% for post in site.posts %}
-- **[{{ post.title }}]({{ post.url }})**  
-  {{ post.date | date: "%Y-%m-%d" }}
-{% endfor %}
+{{ content }}
+
+</body>
+</html>
